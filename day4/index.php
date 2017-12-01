@@ -1,5 +1,5 @@
 <?php
-echo exec('whoami');
+
 echo "hi " .$_POST['name']. "&nbsp".$_POST['surname'];
 echo "</br>";
 echo "u was born " .$_POST['date'];
@@ -19,7 +19,6 @@ if(!file_exists($dir)){
 }
 
 $file_name = $dir.'/'.$file['name'];
-echo "tmp file name ".$file_name;
 if(move_uploaded_file($file['tmp_name'], $file_name)){
     echo "Файл успешно загружен";
 }else {
